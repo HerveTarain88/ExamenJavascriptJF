@@ -1,0 +1,240 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Générateur de tickets</title>
+</head>
+
+<body>
+    <section id="container1" class="container-fluid">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <libelle>Quel temps fait-il ?</libelle>
+                    <input type="text" id="city"> <button id="weatherBtn">OK</button>
+                </div>
+                <div class="col-md-6" id="meteo">
+                </div>
+            
+            <div class="col-md-12">
+                <h1 class="text-center">Bienvenue sur votre Générateur de Tickets     <img src="images/tickets.jpg" height="150" width="190"></h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Noobs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <select name='listeEleves' id="listElevesContent">
+                                        <option value="">Choisi le noob</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Fucking Reasons</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <select name='listeRaisons' id="listRaisonsContent">
+                                        <option value="">Choisi ta fucking reason</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Boss</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <select name='listeFormateurs' id="listFormateursContent">
+                                        <option value="">Choisi le boss</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Urgence ?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <select name='listeUrgence' id="listUrgenceContent">
+                                        <option value="0">Choisi ton urgence</option>
+                                        <option value="1">Je me noye</option>
+                                        <option value="2">Je suis en apné(e)</option>
+                                        <option value="3">Je barbotte</option>
+                                        <option value="4">Je veux me perfectionner</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+        <div><button id="genererTicket" type="button" class="btn btn-warning btn-lg btn-block">Générer un
+                ticket</button></div>
+        </div>
+    </section>
+
+
+    <section id="container1" class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Tickets en cours</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>N° </th>
+                                </tr>
+                            </thead>
+                            <tbody id="numTicketContent">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-3">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nom du noob</th>
+                                </tr>
+                            </thead>
+                            <tbody id="noobContent">
+                            </tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-3">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fucking Reason</th>
+                                </tr>
+                            </thead>
+                            <tbody id="reasonContent">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-2">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nom du boss</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bossContent">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-2">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Urgent ?</th>
+                                </tr>
+                            </thead>
+                            <tbody id="urgenceContent">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="actionContent">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!--template eleves-->
+    <script id="recupererElevesDepuisJs" type="x-tmpl-mustache">
+            <option value="{{id}}">{{prenom}} {{nom}}</option>
+    </script>
+    <!--template raisons -->
+    <script id="recupererRaisonsDepuisJs" type="x-tmpl-mustache">
+            <option value="{{id}}">{{libelle}}</option>
+        </script>
+    <!--template formateurs -->
+    <script id="recupererFormateursDepuisJs" type="x-tmpl-mustache">
+        <option value="{{id}}">{{nomF}}</option>        
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--Utilisation d’au moins une librairie dans le projet autre que bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

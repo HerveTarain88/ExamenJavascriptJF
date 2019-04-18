@@ -1,0 +1,22 @@
+.container-fluid {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
+}
+
+h1, h2 {
+    color: rgb(58, 59, 109);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+body {
+    background: rgb(221, 186, 255);
+}
+
+.row {
+    margin-right:-100px;
+    margin-left:-100px;
+ }
